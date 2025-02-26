@@ -1,10 +1,18 @@
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #000000, #000000);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +30,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #ff6600;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +51,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-custom {
+  background-color: #000000;
+  padding: 0.8rem 1rem;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff;
+  margin-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+.navbar-custom .btn-rounded {
+  border-radius: 20px;
 }
